@@ -4,6 +4,7 @@ const app = express();
 require('dotenv').config();
 const PORT = process.env.PORT || 3000;
 
+//middlewares
 app.use(express.json());
 const fileupload = require('express-fileupload');
 app.use(fileupload({
